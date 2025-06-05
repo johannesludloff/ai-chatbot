@@ -7,9 +7,21 @@ import './globals.css';
 import { SessionProvider } from 'next-auth/react';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://chat.vercel.ai'),
-  title: 'Next.js Chatbot Template',
-  description: 'Next.js chatbot template using the AI SDK.',
+  metadataBase: process.env.VERCEL_URL
+    ? new URL(`https://${process.env.VERCEL_URL}`)
+    : new URL('https://chat.vercel.ai'),
+  title: {
+    default: 'Trauerredengenerator',
+    template: `%s - Trauerredengenerator`,
+  },
+  description:
+    'Ein Tool zur Erstellung von Trauerreden, das Ihnen hilft, Ihre Gedanken und Gefühle auszudrücken.',
+  icons: {
+    icon: '/favicon-48x48.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export const viewport = {

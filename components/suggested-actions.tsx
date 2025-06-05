@@ -19,24 +19,38 @@ function PureSuggestedActions({
 }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'What are the advantages',
-      label: 'of using Next.js?',
-      action: 'What are the advantages of using Next.js?',
+      title: 'Starte mit Informationen',
+      label: 'des Verstorbenen',
+      action:
+        'Ich möchte eine Trauerrede erstellen. Frage mich nach den Informationen des Verstorbenen, die dir dabei helfen eine Trauerrede zu erstellen.',
     },
     {
-      title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: 'Starte mit einem Beispiel',
+      label: 'einer Trauerrede',
+      action: `Erstelle eine Trauerrede basierend auf diesen Informationen:
+
+Vorname: Max
+Nachname: Mustermann
+Geburtsdatum: 01.01.1970
+Geburtsort: Musterstadt
+Datum des Todes: 01.01.2021
+Besondere Eigenschaften oder Fähigkeiten: Feuerwehrmann, Vater, Ehemann, liebt das Meer und das Segeln
+Bedeutende Errungenschaften oder Ereignisse: hat 3 Kinder, hat 2 Enkelkinder, hat 2 Häuser gebaut, hat 2 Weltreisen gemacht
+Positive Werte oder Eigenschaften: Großzügig und hilfsbereit, spendete Geld an Unicef, war immer für seine Familie da
+
+Bitte erstelle eine einfühlsame Trauerrede von etwa 5-7 Minuten Länge.`,
     },
     {
-      title: 'Help me write an essay',
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: 'Lade eine erstellte Trauerrede',
+      label: 'und erstelle weitere in diesem Stil',
+      action:
+        'Ich möchte dir eine bereits erstellte Trauerrede zeigen, damit du weitere Reden in einem ähnlichen Stil erstellen kannst. Bitte erkläre mir zunächst, wie ich die Trauerrede am besten zur Verfügung stelle, und welche Informationen du für neue Reden in diesem Stil benötigst.',
     },
     {
-      title: 'What is the weather',
-      label: 'in San Francisco?',
-      action: 'What is the weather in San Francisco?',
+      title: 'Überarbeite eine Trauerrede',
+      label: 'in einem anderen Stil',
+      action:
+        'Ich habe eine bereits geschriebene Trauerrede, die ich in einem anderen Stil überarbeiten möchte. Bitte erkläre mir, wie ich die bestehende Rede teilen kann und welche Stilrichtungen möglich sind (z.B. persönlicher, traditioneller, moderner, religiöser oder weltlicher).',
     },
   ];
 
